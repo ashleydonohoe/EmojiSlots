@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var emoji1: UILabel!
+    @IBOutlet weak var emoji2: UILabel!
+    @IBOutlet weak var emoji3: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +24,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func spin(sender: AnyObject) {
+        emoji1.text = EmojiModel().getRandomEmoji()
+        emoji2.text = EmojiModel().getRandomEmoji()
+        emoji3.text = EmojiModel().getRandomEmoji()
+        
+    }
 
 }
 

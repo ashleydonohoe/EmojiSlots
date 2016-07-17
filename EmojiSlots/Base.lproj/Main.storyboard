@@ -60,6 +60,9 @@
                                 </constraints>
                                 <color key="tintColor" red="0.81455592109999997" green="0.64568770559999999" blue="0.87962582239999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="SPIN"/>
+                                <connections>
+                                    <action selector="spin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mf7-V7-4lI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.81455592105263153" green="0.64568770559210531" blue="0.87962582236842102" alpha="1" colorSpace="calibratedRGB"/>
@@ -86,6 +89,11 @@
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="emoji1" destination="zWh-9V-XRM" id="gXi-5H-UXy"/>
+                        <outlet property="emoji2" destination="SpF-fQ-BT5" id="5CG-mm-IJg"/>
+                        <outlet property="emoji3" destination="8fV-kW-2xS" id="cGx-gb-UKM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
